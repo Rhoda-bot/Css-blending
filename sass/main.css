@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.logo {
+  width: 150px;
+}
+
+.wrapper .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .nav__menu--link {
+  display: inline-block;
+  padding: 1rem 1.1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.wrapper .nav__menu--link:nth-child(5) {
+  padding: 0 4.7rem;
+}
+.wrapper .banner {
+  font-family: "Josefin Sans", sans-serif;
+  align-items: center;
+}
+.wrapper .banner__img {
+  width: 50%;
+  z-index: -1;
+  left: 10%;
+  transform: translate(2%, 15%);
+  bottom: 0;
+  height: 87vh;
+  filter: grayscale(0.5);
+  background-image: url("../assets/45450062.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.wrapper .banner__texts {
+  margin: 4rem 0;
+}
+.wrapper .banner__texts--title {
+  font-size: 65px;
+  font-weight: bolder;
+  margin-top: 2rem 0;
+}
+.wrapper .banner__texts--text {
+  font-size: 1.1rem;
+}
+.wrapper .banner__texts--span {
+  font-weight: 900;
+}
+.wrapper .banner__texts--btn {
+  background-color: rgb(227, 231, 245);
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  border: 2px solid rgb(227, 231, 245);
+  color: royalblue;
+  font-weight: 800;
+}
+.wrapper .banner__texts--btn:hover {
+  transition: 3s all ease-in-out;
+  background-color: transparent;
+  border: 2px solid royalblue;
+}
+.wrapper .banner__forms {
+  width: 80%;
+  top: -5%;
+  left: -15%;
+  transform: translate(-1%, -50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 4px 10px rgba(12, 53, 15, 0.2);
+}
+.wrapper .banner__forms--inputs {
+  padding: 0.8rem 0.5rem;
+}
+.wrapper .gallery__col--title {
+  font-size: 64px;
+  font-weight: bolder;
+  color: purple;
+}
+.wrapper .featured__col--title {
+  font-weight: bolder;
+  margin-top: 10px;
+}
+.wrapper .featured__col--text {
+  color: aqua;
+}
+.wrapper .holiday__img {
+  width: 92%;
+}
+.wrapper .holiday__col {
+  padding: 1rem 1rem;
+}
+.wrapper .holiday__col--title {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+}
+.wrapper .holiday__col--icon {
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 100%;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+.wrapper .holiday__col--subtitle {
+  font-weight: bold;
+  font-size: 23px;
+}
+.wrapper .explore--title {
+  font-weight: 900;
+}
+.wrapper .explore__col--img {
+  width: 50%;
+}
+.wrapper .explore__col--subtitle {
+  font-weight: bold;
+}
+.wrapper .footer__menu--list {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .banner__img {
+    width: 100%;
+  }
+  .wrapper .banner__texts--title {
+    font-size: 2rem;
+  }
+  .wrapper .bookings__col--img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper .banner__img {
+    width: 50%;
+    height: 100vh;
+  }
+  .wrapper .banner__texts--title {
+    font-size: 2rem;
+  }
+  .wrapper .banner__forms {
+    width: 80%;
+    top: 15%;
+    left: 15%;
+    transform: translate(1%, -25%);
+  }
+  .wrapper .bookings__col--img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

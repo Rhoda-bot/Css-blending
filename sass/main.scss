@@ -1,0 +1,203 @@
+body{
+margin: 0;
+font-family: 'Josefin Sans', sans-serif;
+// font-family: 'Jost', sans-serif;
+}
+.logo{
+    width: 150px;
+}
+.wrapper{
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__menu{
+            &--link{
+                display: inline-block;
+                padding: 1rem 1.1rem;
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+            &--link:nth-child(5){
+                padding:0 4.7rem;
+            }
+        }
+    }
+    .banner{
+        font-family: 'Josefin Sans', sans-serif;
+        align-items: center;
+        &__img{
+            width: 50%;
+            z-index: -1;
+            left: 10%;
+            transform: translate(2%, 15%);
+            bottom: 0;
+            height: 87vh;
+            filter:grayscale(.5);
+            background-image: url('../assets/45450062.webp');
+            background-size:contain;
+            background-repeat: no-repeat;
+        }
+        &__texts{
+            margin: 4rem 0;
+            &--title{
+                font-size: 65px;
+                font-weight:bolder;
+                margin-top: 2rem 0;
+            }
+            &--text{
+                font-size: 1.1rem;
+                // font-weight: l;
+            }
+            &--span{
+                font-weight: 900;
+            }
+            &--btn{
+                background-color: rgb(227, 231, 245);
+                padding: .5rem 1.5rem;
+                border-radius: 10px;
+                border:  2px solid rgb(227, 231, 245);
+                color: royalblue;
+                font-weight: 800;
+            }
+            &--btn:hover{
+                transition:3s all ease-in-out ;
+                background-color: transparent;
+                border: 2px solid royalblue;
+            }
+        }
+        // &--texts:nth-child(1){
+        //     margin-top: 3rem;
+        //     color: pink;
+        // }
+        &__forms{
+            width: 80%;
+            top: -5%;
+            left: -15%;
+            transform: translate(-1%, -50%);
+            background-color: white;
+            padding: 2rem;
+            border-radius: 7px;
+            box-shadow: 0 4px 10px rgba(12, 53, 15, 0.2); 
+            &--inputs{
+            padding: .8rem .5rem;
+            }
+        }
+    }
+    .gallery{
+        &__col{
+            &--title{
+                font-size: 64px;
+                font-weight: bolder;
+                color: purple;
+            }
+        }
+    }
+    .featured{
+        &__col{
+            &--title{
+                font-weight: bolder;
+                margin-top: 10px;
+            }
+            &--text{
+                color: aqua;
+            }
+        }
+    }
+    .holiday{
+        &__img{
+            width: 92%;
+            // left: 20%;
+        }
+        &__col{
+            padding: 1rem 1rem;
+            &--title{
+                font-size: 30px;
+                font-weight: bolder;
+                margin-bottom: 2rem;
+                padding-top: 1.5rem ;
+            }
+            &--icon{
+                cursor: pointer;
+                padding: .8rem;
+                border-radius: 100%;
+                text-align: center;
+                width: 50px;
+                height: 50px;
+            }
+            &--subtitle{
+                font-weight: bold;
+                font-size: 23px;
+            }
+        }
+    }
+    .explore{
+        &--title{
+            font-weight: 900;
+        }
+        &__col{
+            &--img{
+                width: 50%;
+            }
+            &--subtitle{
+                font-weight: bold;
+            }
+        }
+    }
+    .footer{
+        &__menu{
+            &--list{
+                list-style-type: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .wrapper{
+        .banner{
+            &__img{
+                width: 100%;
+            }
+            &__texts{
+                &--title{
+                    font-size: 2rem;
+                }
+            }
+        }
+        .bookings{
+            &__col{
+                &--img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrapper{
+        .banner{
+            &__img{
+                width: 50%;
+                height: 100vh;
+            }
+            &__texts{
+                &--title{
+                    font-size: 2rem;
+                }
+            }
+            &__forms{
+                width: 80%;
+                top: 15%;
+                left: 15%;
+                transform: translate(1%, -25%); 
+            }
+        }
+        .bookings{
+            &__col{
+                &--img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
