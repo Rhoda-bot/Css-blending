@@ -5,9 +5,11 @@ font-family: 'Josefin Sans', sans-serif;
 }
 .logo{
     width: 150px;
+    // padding:0 4.7rem;
 }
 .wrapper{
     .nav{
+        margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -26,7 +28,7 @@ font-family: 'Josefin Sans', sans-serif;
     .banner{
         font-family: 'Josefin Sans', sans-serif;
         align-items: center;
-        &__img{
+        &__col{
             width: 50%;
             z-index: -1;
             left: 10%;
@@ -37,6 +39,24 @@ font-family: 'Josefin Sans', sans-serif;
             background-image: url('../assets/45450062.webp');
             background-size:contain;
             background-repeat: no-repeat;
+            border-radius: 10px;
+            &--img1{
+                width: 12%;
+                left: 10%;
+                top: 10%;
+                transform: translate(-45%, 20%);
+                border-radius: 100%;
+                border: 2px solid white;
+            }
+            &--img2{
+                margin-top: 1rem;
+                width: 15%;
+                left: 10%;
+                top: 10%;
+                transform: translate(-45%, 20%);
+                border-radius: 100%;
+                border: 2px solid white;
+            }
         }
         &__texts{
             margin: 4rem 0;
@@ -94,6 +114,12 @@ font-family: 'Josefin Sans', sans-serif;
         }
     }
     .featured{
+        &--title{
+            font-weight: bolder;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 50px;
+        }
         &__col{
             &--title{
                 font-weight: bolder;
