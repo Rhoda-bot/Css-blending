@@ -21,6 +21,7 @@ body {
 }
 .wrapper .nav__menu--link:nth-child(5) {
   padding: 0 4.7rem;
+  color: red;
 }
 .wrapper .banner {
   font-family: "Josefin Sans", sans-serif;
@@ -28,33 +29,46 @@ body {
 }
 .wrapper .banner__col {
   width: 50%;
-  z-index: -1;
-  left: 10%;
-  transform: translate(2%, 15%);
-  bottom: 0;
-  height: 87vh;
+  left: 6%;
+  transform: translate(1%, 10%);
+  height: 100vh;
+  padding: 3rem;
   filter: grayscale(0.5);
-  background-image: url("../assets/139936580.jpg");
+  background-image: url("../assets/c.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  position: relative;
+}
+.wrapper .banner__col--card {
+  position: absolute;
+  height: 15vh;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(12, 53, 15, 0.2);
+  background-color: white;
+  width: 20%;
+  opacity: 0.5;
+  top: 6%;
+  left: 48%;
+  transform: translate(90%, -60%);
 }
 .wrapper .banner__col--img1 {
-  width: 12%;
+  padding: 0.5rem;
+  width: 15%;
   left: 10%;
   top: 10%;
-  transform: translate(-45%, 20%);
+  transform: translate(-100%, 20%);
   border-radius: 100%;
-  border: 2px solid white;
+  box-shadow: 0 4px 10px rgba(12, 53, 15, 0.2);
 }
 .wrapper .banner__col--img2 {
   margin-top: 1rem;
   width: 15%;
   left: 10%;
   top: 10%;
-  transform: translate(-45%, 20%);
+  transform: translate(-100%, 20%);
   border-radius: 100%;
   border: 2px solid white;
+  box-shadow: 0 4px 10px rgba(12, 53, 15, 0.2);
 }
 .wrapper .banner__texts {
   margin: 4rem 0;
@@ -85,9 +99,8 @@ body {
 }
 .wrapper .banner__forms {
   width: 80%;
-  top: -5%;
   left: -15%;
-  transform: translate(-1%, -50%);
+  transform: translate(1%, -65%);
   background-color: white;
   padding: 2rem;
   border-radius: 7px;
@@ -95,6 +108,9 @@ body {
 }
 .wrapper .banner__forms--inputs {
   padding: 0.8rem 0.5rem;
+}
+.wrapper .bookings__col {
+  box-shadow: 0 4px 10px rgba(12, 53, 15, 0.2);
 }
 .wrapper .gallery__col--title {
   font-size: 64px;
@@ -147,12 +163,15 @@ body {
 .wrapper .explore__col--subtitle {
   font-weight: bold;
 }
+.wrapper .download--title {
+  font-weight: bolder;
+}
 .wrapper .footer__menu--list {
   list-style-type: none;
 }
 
 @media screen and (max-width: 600px) {
-  .wrapper .banner__img {
+  .wrapper .banner__col {
     width: 100%;
   }
   .wrapper .banner__texts--title {
